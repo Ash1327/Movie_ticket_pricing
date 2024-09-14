@@ -1,1 +1,8 @@
 # Movie_ticket_pricing
+The Movie Ticket Pricing project, developed using C++ with Object-Oriented Programming (OOP) principles, is a console-based application that manages the pricing and booking of movie tickets. The project employs various OOP concepts such as classes, inheritance, and polymorphism to model the system efficiently.
+
+The system consists of classes like Movie, Ticket, and Customer. The Movie class contains details about the movie, such as the name, show timings, and available seats. The Ticket class handles the ticket pricing based on seat category (e.g., regular, premium), day of the week (weekday or weekend), and any applicable discounts or taxes. The Customer class stores customer information, booking history, and payment details.
+
+File handling is a critical component of the application. It is used to store and retrieve movie information, ticket details, and customer data. Data such as available seats, booked tickets, and pricing schemes are written to files using ofstream and read back using ifstream, ensuring persistent storage between sessions.
+
+The application is entirely console-based, providing a user-friendly interface to customers for selecting movies, viewing available showtimes, choosing seats, and making bookings. Customers can input their choices via the command line, and the system calculates the total price and generates a ticket for them. The use of encapsulation ensures data integrity, and inheritance can be applied for creating special pricing schemes for children or senior citizens. This project showcases a practical implementation of OOP principles, file handling, and user interaction in C++.
