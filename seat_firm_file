@@ -1,0 +1,27 @@
+void movie_booking::show_seat_frm_file()
+{int i=0,j;
+    system("clear");//after the input is being over the screen is cleared and data is displayed
+cout<<"\n\n\t\t\t\t\t\t\tTHE MOVIES RUNNING IN HALL ARE:\n\n\n";
+ifstream fin;
+fin.open("movie_test2.csv");
+if(dir_customer==0)
+    m=13;
+while(i<m)
+{
+     cout<<"\n\t\t\t\t\t\t\t";
+
+    getline(fin,name[i],',');
+    cout<<"MOVIE :\t"<<i+1<<"\t"<<name[i]<<endl<<endl;
+    cout<<"\t\t\t\t\t\t\t";
+    cout<<"THE TIMINGS OF THE MOVIE : "<<name[i]<<" :-  "<<endl;
+    int j=0;
+
+   getline(fin,tim[i][j],'\n');
+        cout<<"\t\t\t\t\t\t\t";
+        cout<<tim[i][j]<<endl<<endl;
+
+i++;//to access the different movie names
+}
+
+}
+
